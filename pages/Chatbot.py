@@ -49,3 +49,5 @@ if st.button("Ask"):
 
         st.subheader("Answer:")
         st.write(response.get("response", "Sorry, no answer generated."))
+
+print("Hey")
