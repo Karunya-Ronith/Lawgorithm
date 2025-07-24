@@ -27,6 +27,7 @@ Lawgorithm is an AI-powered legal assistant tailored for the Indian legal system
 ├── legal_faiss.index             # FAISS index for semantic search
 ├── Images/                       # Team member images
 ├── read_db.py                    # Script to read from the database
+├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
 ```
 
@@ -46,7 +47,7 @@ venv\Scripts\activate
 ```
 Install required packages:
 ```sh
-pip install streamlit faiss-cpu numpy sentence-transformers torch requests pytesseract pillow googletrans==4.0.0-rc1 python-docx pymupdf
+pip install -r requirements.txt
 ```
 
 > **Note:**
@@ -74,17 +75,10 @@ streamlit run App.py
 - **Hindi Translation:** Upload an image with Hindi text to extract and translate to English, then download as `.docx`.
 
 ## Dependencies
-- streamlit
-- faiss-cpu
-- numpy
-- sentence-transformers
-- torch
-- requests
-- pytesseract
-- pillow
-- googletrans==4.0.0-rc1
-- python-docx
-- pymupdf
+All dependencies are listed in [`requirements.txt`](requirements.txt). Install them using:
+```sh
+pip install -r requirements.txt
+```
 
 ## Data
 The `Data/` folder contains legal PDFs (e.g., IPC, Company Law, Constitution, etc.) used for search and Q&A.

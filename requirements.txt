@@ -1,0 +1,11 @@
+streamlit
+faiss-cpu
+numpy
+sentence-transformers
+torch
+requests
+pytesseract
+pillow
+googletrans==4.0.0-rc1
+python-docx
+pymupdf 
