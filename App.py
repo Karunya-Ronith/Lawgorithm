@@ -67,13 +67,13 @@ st.write("Meet the brilliant minds behind **Lawgarithm**.")
 team_col1, team_col2, team_col3 = st.columns(3)
 
 with team_col1:
-    st.image("Images\Karunya.png", caption="L Karunya Ronith", use_container_width=True, output_format="PNG", clamp=True)
+    st.image("Images\Karunya.png", caption="L Karunya Ronith", output_format="PNG")
 
 with team_col2:
-    st.image("Images/Manav.png", caption="Manav M Bajaj", use_container_width=True, output_format="PNG", clamp=True)
+    st.image("Images\Manav.png", caption="Manav M Bajaj", output_format="PNG", clamp=True)
 
 with team_col3:
-    st.image("Images\Abhijith.png", caption="Abhijeet Srivathsan", use_container_width=True, output_format="PNG", clamp=True)
+    st.image("Images\Abhijith.png", caption="Abhijeet Srivathsan", output_format="PNG", clamp=True)
 
 
 

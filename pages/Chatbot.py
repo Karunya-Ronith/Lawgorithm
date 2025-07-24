@@ -34,8 +34,10 @@ if st.button("Ask"):
         best_doc = legal_docs[best_match_index][2]
 
         prompt = f"""
-            You are an Indian legal expert. Answer strictly based on the legal document:
-            {best_doc}
+            You are an Indian legal expert. Answer strictly based on the legal document. Do not hallucinate or fabricate any information. If the question is not related to the document, say "I don't know".
+            Document: {best_doc}
+
+            Do not anwer any question that is not related to law. Check the user query if it is related to law or not. If it is not related to law, say "I don't know".
 
             Q: {user_query}
             A:
